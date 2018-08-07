@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ideabytes.qezytv.genericplayer.MainActivity">
+    <item  android:id="@+id/player"
+        android:title="Player"/>
+    <item  android:id="@+id/ethernet"
+        android:title="Ethernet"/>
+    <item  android:id="@+id/wifi"
+        android:title="Wifi"/>
+    <item  android:id="@+id/exit"
+        android:title="Exit"/>
+</menu>

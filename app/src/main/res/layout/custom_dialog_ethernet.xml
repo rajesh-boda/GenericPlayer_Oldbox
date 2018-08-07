@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/default_logo">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/Alert_Dialog_Btn_On"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_color_yes"
+                android:clickable="true"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Alert_Dialog_Btn_Off"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_color_yes"
+                android:clickable="true"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

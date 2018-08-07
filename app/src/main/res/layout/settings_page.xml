@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player"
+            android:id="@+id/btnPlayer"
+            android:background="@drawable/button_color_yes"
+            android:layout_margin="5dp"/>
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Wifi"-->
+            <!--android:id="@+id/btnWifi"-->
+            <!--android:layout_toRightOf="@+id/btnPlayer"-->
+            <!--android:background="@drawable/button_color_yes"-->
+            <!--android:layout_margin="5dp"/> not required for now,25-04-2016-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ethernet"
+            android:id="@+id/btnEthernet"
+            android:layout_toRightOf="@+id/btnWifi"
+            android:background="@drawable/button_color_yes"
+            android:layout_margin="5dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bandwidth Check"
+            android:id="@+id/btnCheckBand"
+            android:layout_toRightOf="@+id/btnWifi"
+            android:background="@drawable/button_color_yes"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:id="@+id/btnExit"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_color_yes"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvReason"
+        android:textColor="@color/red"
+        android:text="User Stopped Player"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+    <ProgressBar
+        android:id="@+id/settingProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/my_wheel"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+    <FrameLayout
+        android:layout_below="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_container"
+        android:layout_centerInParent="true">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="New Text"-->
+            <!--android:id="@+id/ip_address"-->
+            <!--android:layout_gravity="center" />-->
+    </FrameLayout>
+
+    <!--<Switch-->
+        <!--android:id="@+id/switch1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginLeft="249dp"-->
+        <!--android:layout_marginTop="438dp"-->
+        <!--android:text="Switch" />-->
+
+
+</RelativeLayout>

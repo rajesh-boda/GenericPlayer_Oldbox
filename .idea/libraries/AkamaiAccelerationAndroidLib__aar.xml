@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="AkamaiAccelerationAndroidLib:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AkamaiAccelerationAndroidLib.aar/9eee630fe25df5fcb4f0bd05bbad6bb1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AkamaiAccelerationAndroidLib.aar/9eee630fe25df5fcb4f0bd05bbad6bb1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AkamaiAccelerationAndroidLib.aar/9eee630fe25df5fcb4f0bd05bbad6bb1/jars/libs/android-helpers.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AkamaiAccelerationAndroidLib.aar/9eee630fe25df5fcb4f0bd05bbad6bb1/jars/libs/android-sdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

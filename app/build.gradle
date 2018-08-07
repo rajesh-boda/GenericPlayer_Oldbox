@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    useLibrary 'org.apache.http.legacy'
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    defaultConfig {
+        applicationId "com.ideabytes.qezytv.genericplayer"
+
+        minSdkVersion 17
+        targetSdkVersion 16
+        //for above 6  minSdkVersion 21
+        //for 4.0  minSdkVersion 17
+        // minSdkVersion 21
+       // targetSdkVersion 26
+        versionCode 3
+        versionName "v6.0.3"
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        buildType {
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:26.0.0'
+    compile 'com.android.support:design:26.0.0'
+//    classpath 'com.android.tools.build:gradle:3.0.0-alpha8'
+    compile(name:'AkamaiAccelerationAndroidLib', ext:'aar')
+   // compile files('libs/android-helpers.jar')
+   // compile files('libs/android-sdk.jar')
+    compile files('libs/commons-net-3.4.jar')
+    compile 'com.android.volley:volley:1.0.0'
+}

@@ -1,0 +1,36 @@
+TASK qezytv.ideabytes.com.genericplayer id=16
+  ACTIVITY qezytv.ideabytes.com.genericplayer/.NextActivity 420e3878 pid=16963
+    Local Activity 439c00c0 State:
+      mResumed=true mStopped=false mFinished=false
+      mLoadersStarted=true
+      mChangingConfigurations=false
+      mCurrentConfig={1.3 ?mcc?mnc en_US ldltr sw720dp w1280dp h647dp 160dpi lrg long land -touch -keyb/v/h dpad/v s.6}
+    FragmentManager misc state:
+      mActivity=qezytv.ideabytes.com.genericplayer.NextActivity@439c00c0
+      mContainer=android.app.Activity$1@439c0250
+      mCurState=5 mStateSaved=false mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{439c0e90 V.E..... R.....I. 0,0-1280,720}
+        android.widget.LinearLayout{439c1380 V.E..... ......I. 0,0-1280,720}
+          android.view.ViewStub{439c1e50 G.E..... ......I. 0,0-0,0 #1020382}
+          android.widget.FrameLayout{439c2010 V.ED.... ......I. 0,0-1280,720 #1020002 android:id/content}
+            android.widget.RelativeLayout{439c25a8 V.E..... ......I. 0,0-1280,720 #7f0d00bc app:id/relscreen}
+              android.view.SurfaceView{439c2a78 V.E..... ......I. 0,0-1280,720 #7f0d006b app:id/surface}
+
+  ACTIVITY qezytv.ideabytes.com.genericplayer/.VideoActivity 420e36a8 pid=16963
+    Local Activity 41f25c88 State:
+      mResumed=false mStopped=true mFinished=false
+      mLoadersStarted=false
+      mChangingConfigurations=false
+      mCurrentConfig={1.3 ?mcc?mnc en_US ldltr sw720dp w1280dp h647dp 160dpi lrg long land -touch -keyb/v/h dpad/v s.6}
+    FragmentManager misc state:
+      mActivity=qezytv.ideabytes.com.genericplayer.VideoActivity@41f25c88
+      mContainer=android.app.Activity$1@41f227c8
+      mCurState=3 mStateSaved=true mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{41f0e990 I.E..... R.....I. 0,0-1280,720}
+        android.widget.LinearLayout{41f1bcb8 V.E..... ......I. 0,0-1280,720}
+          android.view.ViewStub{41f0edb0 G.E..... ......I. 0,0-0,0 #1020382}
+          android.widget.FrameLayout{41f26328 V.ED.... ......I. 0,0-1280,720 #1020002 android:id/content}
+            android.widget.RelativeLayout{41f24ce0 V.E..... ......I. 0,0-1280,720 #7f0d00bc app:id/relscreen}
+              android.view.SurfaceView{41f15db8 V.E..... ......I. 0,0-1280,720 #7f0d006b app:id/surface}

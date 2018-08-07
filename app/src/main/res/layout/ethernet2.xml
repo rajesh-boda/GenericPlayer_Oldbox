@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+  >
+
+
+    <RelativeLayout
+        android:id="@+id/ethernet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/qezy_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/qezymeida_logo"/>
+
+        <ImageView
+            android:id="@+id/idea_bytes_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/qezy_logo"
+            android:src="@drawable/ideabytes_logo"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:id="@+id/ethernet"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:src="@drawable/ethernet"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ethernet"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:text="Ethernet"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:background="@drawable/white_border_background"
+        android:layout_below="@+id/ethernet_layout"
+        android:layout_above="@+id/back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="30">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="30">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:textColor="#ffffff"
+                        android:gravity="end"
+                        android:textSize="22dp"
+                        android:text="Connection Type"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp"
+                            >
+                            <RadioButton
+                                android:id="@+id/rDhcp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DHCP"
+                                android:textSize="20dp"
+                                android:textColor="#ffffff"
+                                android:paddingRight="10dp"
+                                />
+                            <RadioButton
+                                android:id="@+id/rStatic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Static IP"
+                                android:textSize="20dp"
+                                android:textColor="#ffffff"
+                                android:paddingRight="10dp"
+                                />
+
+                        </RadioGroup>
+
+
+
+
+
+
+                    </RelativeLayout>
+                    <!--<RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10">
+
+
+
+                    </RelativeLayout>-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+
+
+                    android:weightSum="40">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10">
+                        <!--<LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="10">-->
+                            <!--<LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5">-->
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView5"
+                                    android:text="IP Address"
+                                    android:layout_weight="5"
+                                    android:textColor="#ffffff"
+
+                                    android:textSize="22dp"/>
+                            <!--</LinearLayout>-->
+                           <!-- <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5">-->
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:id="@+id/etIp"
+                                    android:layout_weight="6"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine = "true"
+                                    android:maxLines="1"
+                                    android:text="120.123.1.2"
+                                    android:textColor="#ffffff"
+                                    android:textSize="22dp"
+                                    android:digits="0123456789."
+                                   />
+                           <!-- </LinearLayout>
+
+                        </LinearLayout>-->
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10">
+                        <!--<LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="10">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5">-->
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Subnet Mask"
+                                    android:textColor="#ffffff"
+                                    android:id="@+id/textView4"
+                                    android:layout_weight="5"
+                                    android:textSize="22dp"/>
+                            <!--</LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5">-->
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Subnet Mask"
+                                    android:id="@+id/etMask"
+                                    android:layout_weight="6"
+                                    android:textColor="#ffffff"
+                                    android:singleLine = "true"
+                                    android:maxLines="1"
+                                    android:textSize="22dp"
+                                    android:gravity="center"
+                                    android:digits="0123456789."
+                                   />
+                            <!--</LinearLayout>
+
+                        </LinearLayout>-->
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10">
+                        <!--<LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="10">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5">-->
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gateway"
+                                    android:layout_weight="5"
+                                    android:textColor="#ffffff"
+                                    android:id="@+id/textView6"
+                                    android:textSize="22dp"/>
+                            <!--</LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5">-->
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gateway"
+                                    android:id="@+id/etGateway"
+                                    android:textColor="#ffffff"
+
+                                    android:singleLine = "true"
+                                    android:maxLines="1"
+                                    android:textSize="22dp"
+                                    android:layout_weight="6"
+                                    android:gravity="center"
+                                    android:digits="0123456789."
+                                    />
+                            <!--</LinearLayout>
+
+                        </LinearLayout>-->
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10">
+                        <!--<LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="10">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5">-->
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="DNS Address"
+                                    android:textColor="#ffffff"
+                                    android:id="@+id/textView7"
+                                    android:layout_weight="5"
+                                    android:textSize="22dp"/>
+                            <!--</LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5">-->
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="0.0.0.0"
+                                    android:id="@+id/etDns"
+                                    android:textColor="#ffffff"
+
+                                    android:digits="0123456789."
+                                    android:singleLine = "true"
+                                    android:layout_weight="6"
+                                    android:textSize="22dp"
+                                    android:maxLines="1"
+                                    android:gravity="center"
+                                   />
+                            <!--</LinearLayout>
+
+                        </LinearLayout>-->
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="10">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5">
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/btnSave"
+                            android:text="Save"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:background="@drawable/rounded_corners_green"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5">
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:text="Reset"
+                            android:textColor="#ffffff"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/btnReset"
+                            android:background="@drawable/rounded_corners_black"
+                            android:layout_alignParentLeft="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Back"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="@drawable/rounded_corners"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"/>
+
+
+
+</RelativeLayout>

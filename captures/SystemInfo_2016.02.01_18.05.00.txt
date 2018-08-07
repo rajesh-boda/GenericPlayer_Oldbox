@@ -1,0 +1,58 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      com.ideabytes.genericplayer.connecter.action.CONNECT_OR_EDIT:
+        42bc3ea8 qezytv.ideabytes.com.genericplayer/.wifi.WifiConnector filter 4383b038
+      android.intent.action.MAIN:
+        42bf6bd0 qezytv.ideabytes.com.genericplayer/.ValidatorActivity filter 4387b240
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.net.conn.CONNECTIVITY_CHANGE:
+        42ba50c0 qezytv.ideabytes.com.genericplayer/.recievers.NetworkChangeReceiver filter 4380acc8
+      android.provider.Telephony.SMS_RECEIVED:
+        42ba10d8 qezytv.ideabytes.com.genericplayer/.recievers.SmsBroadcast filter 437fa990
+      start.fragment.action:
+        42ba9ca8 qezytv.ideabytes.com.genericplayer/.recievers.BootReceiver filter 43819288
+      android.intent.action.BOOT_COMPLETED:
+        42ba9ca8 qezytv.ideabytes.com.genericplayer/.recievers.BootReceiver filter 43824ad0
+ 
+Packages:
+  Package [qezytv.ideabytes.com.genericplayer] (43bc4c70):
+    userId=10071 gids=[3003, 1015, 1028]
+    pkg=Package{439d1cc0 qezytv.ideabytes.com.genericplayer}
+    codePath=/data/app/qezytv.ideabytes.com.genericplayer-2.apk
+    resourcePath=/data/app/qezytv.ideabytes.com.genericplayer-2.apk
+    nativeLibraryPath=/data/app-lib/qezytv.ideabytes.com.genericplayer-2
+    versionCode=1 targetSdk=23
+    versionName=GenericPlayer_V2.0_B1.1.0
+    applicationInfo=ApplicationInfo{43a92330 qezytv.ideabytes.com.genericplayer}
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    dataDir=/data/data/qezytv.ideabytes.com.genericplayer
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=1970-01-02 13:11:40
+    firstInstallTime=1970-01-02 11:43:45
+    lastUpdateTime=1970-01-02 13:11:43
+    installerPackageName=adb
+    signatures=PackageSignatures{42a0b4e8 [42731098]}
+    permissionsFixed=true haveGids=true installStatus=1
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+    User 0:  installed=true stopped=false notLaunched=false enabled=0
+    grantedPermissions:
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.GET_TASKS
+      android.permission.SEND_SMS
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECEIVE_SMS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.GET_ACCOUNTS
+      android.permission.CLEAR_APP_CACHE
+      android.permission.READ_PHONE_STATE
+      android.permission.READ_SMS
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WAKE_LOCK

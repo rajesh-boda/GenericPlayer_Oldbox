@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- By Suman -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+
+            <!-- Change state pressed button color here -->
+            <gradient android:angle="90" android:endColor="#1170d2" android:startColor="#1170d2" />
+
+            <padding android:bottom="10.0dip" android:left="10.0dip" android:right="10.0dip" android:top="10.0dip" />
+
+            <stroke android:width="1.0dip" android:color="#7d0000" />
+        </shape></item>
+    <item android:state_pressed="false"><shape android:shape="rectangle">
+
+            <!-- Change default button color here -->
+
+            <gradient android:angle="90" android:endColor="#ef5721" android:startColor="#ef5721" />
+
+            <padding android:bottom="10.0dip" android:left="10.0dip" android:right="10.0dip" android:top="10.0dip" />
+
+            <stroke android:width="1.0dip" android:color="#8f8f8f" />
+        </shape></item>
+
+</selector>
